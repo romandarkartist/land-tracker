@@ -1,0 +1,20 @@
+{
+ "title": "Northern Ontario Land & Tax Sale Tracker",
+ "last_updated": "2026-10-15",
+ "criteria": "Unorganized land from Sudbury north (Timmins area ideal; farther north fine; nothing south of Sudbury). Goal ~150 acres with road frontage, ideally from a tax sale. Research only for now.",
+ "parcels": [
+  {"name":"Martin Bird Rd (PCL 15528 & 15527)","area":"Hearst Twp / Larder Lake (near Kirkland Lake)","acres":101,"price":"$120,000 (MLS list price)","sale_type":"MLS listing (not tax sale)","deadline":"None (open listing)","frontage":"~1,436 ft on public road (Martin Bird Rd off Hwy 624)","zoning":"NR - Natural Resources","notes":"MLS T13654964, listed Aug 9 2026. Assessed $30,600 (2026). Listing says ORGANIZED township of Larder Lake, so it does not meet the unorganized criterion. NR zoning: a new house likely not allowed - confirm with township.","url":"https://property.ca/listings/t13654964","status":"Active (watching)","first_seen":"2026-10","last_checked":"2026-10-15"},
+  {"name":"McGarry 180 acres","area":"McGarry Twp (Timiskaming)","acres":180,"price":"Unconfirmed","sale_type":"Unconfirmed","deadline":"Unconfirmed","frontage":"Unconfirmed","zoning":"Unconfirmed","notes":"Found in earlier research; details not re-verified today.","url":"","status":"Watching","first_seen":"2026-10","last_checked":"2026-10-15"},
+  {"name":"Timmins / South Porcupine 243 acres","area":"South Porcupine, Timmins","acres":243,"price":"Unconfirmed","sale_type":"Unconfirmed","deadline":"Unconfirmed","frontage":"Unconfirmed","zoning":"Unconfirmed","notes":"Found in earlier research; details not re-verified today. Timmins is a city (organized).","url":"","status":"Watching","first_seen":"2026-10","last_checked":"2026-10-15"}
+ ],
+ "sources":[
+  {"name":"Infrastructure Ontario - unorganized land sales","url":"https://www.infrastructureontario.ca/en/what-we-do/realestate/"},
+  {"name":"Ontario Gazette (municipal tax sale notices)","url":"https://www.ontario.ca/search/ontario-gazette"},
+  {"name":"OntarioTaxSales.ca","url":"https://www.ontariotaxsales.ca/"},
+  {"name":"TaxSales.ca","url":"https://www.taxsales.ca/"},
+  {"name":"TaxSalesHub","url":"https://taxsaleshub.ca/"}
+ ],
+ "log":[
+  {"date":"2026-10-15","entry":"Tracker created. Re-verified Larder Lake MLS T13654964: $120K, just over 101 acres, NR zoning, organized township. McGarry and South Porcupine carried over from earlier research, not re-verified."}
+ ]
+}
