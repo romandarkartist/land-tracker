@@ -1,6 +1,6 @@
 {
  "title": "Northern Ontario Land & Tax Sale Tracker",
- "last_updated": "2026-10-18",
+ "last_updated": "2026-10-25",
  "criteria": "Unorganized land from Sudbury north (Timmins area ideal; farther north fine; nothing south of Sudbury). Goal ~150 acres with road frontage, ideally from a tax sale. Research only for now.",
  "parcels": [
   {
@@ -12,11 +12,11 @@
    "deadline": "None (open listing)",
    "frontage": "~1,436 ft on public road (Martin Bird Rd off Hwy 624)",
    "zoning": "NR - Natural Resources",
-   "notes": "MLS T13654964, listed Aug 8 2026, still for sale at $120,000 as of Oct 18 (no price change). Assessed $30,600 (2026). ORGANIZED township of Larder Lake, so it doesn't meet the unorganized criterion. NR zoning: a new house likely not allowed - confirm with township.",
+   "notes": "MLS T13654964, listed Aug 8 2026, still for sale at $120,000 as of Oct 25 (no price change). Assessed $30,600 (2026). ORGANIZED township of Larder Lake, so it doesn't meet the unorganized criterion. NR zoning: a new house likely not allowed - confirm with township.",
    "url": "https://property.ca/listings/t13654964",
    "status": "Active (watching)",
    "first_seen": "2026-10",
-   "last_checked": "2026-10-18"
+   "last_checked": "2026-10-25"
   },
   {
    "name": "McGarry 180.38 acres (Roll 54 58 000 004 36800)",
@@ -27,11 +27,11 @@
    "deadline": "Oct 1, 2026 (passed)",
    "frontage": "Private road access only",
    "zoning": "MX - Extractive Industrial (gravel pit on site)",
-   "notes": "Tax sale closed Oct 1, 2026 with no valid tenders. Five former mining-claim parcels, minimum bid far above assessed value, industrial gravel-pit zoning. Poor homestead fit; the township may relist or vest it later.",
+   "notes": "Tax sale closed Oct 1, 2026 with no valid tenders. Five former mining-claim parcels, minimum bid far above assessed value, industrial gravel-pit zoning. Poor homestead fit; the township may relist or vest it later. Oct 25: OntarioTaxSales still shows 'No valid tenders or bids received'; no relist or vesting notice found.",
    "url": "https://www.ontariotaxsales.ca/property/mcgarry-2026-10-01-24-25/",
    "status": "Tax sale failed (no bids) - not a fit",
    "first_seen": "2026-10",
-   "last_checked": "2026-10-18"
+   "last_checked": "2026-10-25"
   },
   {
    "name": "Timmins / South Porcupine 243 acres",
@@ -42,11 +42,11 @@
    "deadline": "Unconfirmed",
    "frontage": "Unconfirmed",
    "zoning": "Unconfirmed",
-   "notes": "Found in earlier research; still not re-verified (no current 243-acre South Porcupine listing turned up on Oct 18). Timmins is a city (organized).",
+   "notes": "Found in earlier research; still not verified. Oct 25 search again found no 243-acre South Porcupine listing (only an old 93-acre Night Hawk Lake listing terminated in 2017). Timmins is a city (organized). Consider dropping if it doesn't turn up soon.",
    "url": "",
    "status": "Watching",
    "first_seen": "2026-10",
-   "last_checked": "2026-10-18"
+   "last_checked": "2026-10-25"
   },
   {
    "name": "PCL 1175 Coulson Township - 160 acres",
@@ -57,11 +57,11 @@
    "deadline": "None (open listing)",
    "frontage": "No road frontage; logging-road access (near Hwy 101 & Hwy 11)",
    "zoning": "Unorganized - no zoning",
-   "notes": "MLS T13427242 (HomeLife Optimum). Surface and tree rights (except pine). Seller will consider a vendor take-back mortgage with 50% down. Taxes about $50/yr. GPS 48.67222, -80.31442. Closest size match to the 150-acre goal, but access is by logging road only.",
+   "notes": "MLS T13427242 (HomeLife Optimum). Surface and tree rights (except pine). Seller will consider a vendor take-back mortgage with 50% down. Taxes about $50/yr. GPS 48.67222, -80.31442. Closest size match to the 150-acre goal, but access is by logging road only. Still listed at $120,000 as of Oct 25 (listing last updated Aug 7).",
    "url": "https://buyrealty.ca/listing-view/?property=pcl-1175-coulson-township-cochrane-on-p0k-1n0-cochrane-mls-T13427242",
-   "status": "Active (new - worth a look)",
+   "status": "Active (worth a look)",
    "first_seen": "2026-10-18",
-   "last_checked": "2026-10-18"
+   "last_checked": "2026-10-25"
   },
   {
    "name": "Lot 12 PCL 1859 Pyne Twp - 134.5 acres",
@@ -72,26 +72,71 @@
    "deadline": "None (open listing)",
    "frontage": "3-season road access (Heikkila Rd at Fox Con 1) plus 800+ ft of Abitibi River frontage",
    "zoning": "Unorganized - no zoning",
-   "notes": "MLS T13693534 (Royal LePage Northern Realty Leaders), listed Aug 19 2026. Densely treed mature timber, small area cleared ~20 years ago. Taxes about $180/yr. Road is 3-season, not year-round.",
+   "notes": "MLS T13693534 (Royal LePage Northern Realty Leaders), listed Aug 19 2026. Densely treed mature timber, small area cleared ~20 years ago. Taxes about $180/yr. Road is 3-season, not year-round. Still For Sale at $129,900 as of Oct 25 (only price history entry Aug 19).",
    "url": "https://www.squareyards.ca/sale/on/cochrane/cochrane-unorganized/lot-12-pcl-1859-pyne-twp-n-a",
-   "status": "Active (new - worth a look)",
+   "status": "Active (worth a look)",
    "first_seen": "2026-10-18",
-   "last_checked": "2026-10-18"
+   "last_checked": "2026-10-25"
   },
   {
    "name": "PT LT 11 Con 6 Fournier Twp - Hwy 11, 65.58 acres",
    "area": "Fournier Twp, ~10.5 km west of Cochrane - UNORGANIZED",
    "acres": 65.58,
-   "price": "$139,900 (MLS list price)",
+   "price": "$119,400 (MLS list price; cut from $139,900 on Oct 22, 2026)",
    "sale_type": "MLS listing (not tax sale)",
    "deadline": "None (open listing)",
    "frontage": "~1,340 ft on Highway 11 (maintained year-round)",
    "zoning": "Unorganized - no zoning",
-   "notes": "MLS T13200124, listed May 27 2026. Surface, mineral and timber rights; seasonal creek; Crown land on east and west sides; older trailer included as-is. Smaller than the goal but has the year-round highway frontage the plan calls for. About 1 h 25 min to Timmins.",
+   "notes": "MLS T13200124, listed May 27 2026; price reduced $20,500 to $119,400 on Oct 22 2026 (buyrealty listing history). Taxes $300/yr (2026). Surface, mineral and timber rights; seasonal creek; Crown land on east and west sides; older trailer included as-is. Smaller than the goal but has the year-round highway frontage the plan calls for. About 1 h 25 min to Timmins.",
    "url": "https://buyrealty.ca/listing-view/?property=pt-lt-11-con-6-fournier-trans-canada-highway-11-highway-cochrane-cochrane-unorganized-mls-T13200124",
-   "status": "Active (new)",
+   "status": "Active - PRICE CUT",
    "first_seen": "2026-10-18",
-   "last_checked": "2026-10-18"
+   "last_checked": "2026-10-25"
+  },
+  {
+   "name": "PCL 399 Holmes Twp - 169 acres",
+   "area": "Holmes Twp, just east of Matachewan (Timiskaming District) - UNORGANIZED",
+   "acres": 169,
+   "price": "$89,000 (MLS list price)",
+   "sale_type": "MLS listing (not tax sale)",
+   "deadline": "None (open listing)",
+   "frontage": "Unconfirmed (cross streets Hwy 66 & Watabeag Rd; listing does not describe road access)",
+   "zoning": "Unorganized - no zoning",
+   "notes": "MLS T13857208 (Royal LePage Northern Life Realty), listed Oct 2 2026. Crown land on 3 sides, logging rights included. Lot approx 2,639 x 2,754 ft. Taxes $250/yr (2026). Biggest and cheapest unorganized parcel found so far; access needs confirming. Roughly 1.5 h from Timmins (estimate, unverified).",
+   "url": "https://www.squareyards.ca/sale/on/timiskaming/kirkland-lake/kl-outside/pcl-399-holmes-unorganized-n-a",
+   "status": "Active (new - strong fit, access unconfirmed)",
+   "first_seen": "2026-10-25",
+   "last_checked": "2026-10-25"
+  },
+  {
+   "name": "Lot 26 Con 7 near Hearst - 150 acres",
+   "area": "Unorganized township ~10 min from Hearst (Cochrane District), near Hwy 583 S & Huard Rd - UNORGANIZED",
+   "acres": 150,
+   "price": "$100,000 (MLS list price; reduced $25,000 from $125,000)",
+   "sale_type": "MLS listing (not tax sale)",
+   "deadline": "None (open listing)",
+   "frontage": "Seasonal road access; lot front listed as 1,660 ft (depth 3,920 ft)",
+   "zoning": "Unorganized - no zoning",
+   "notes": "MLS T13053332 (RE/MAX Crown Realty (1989)), listed Apr 28 2026. Exactly the 150-acre goal. In WMU 23, surrounded by Crown land, old trail to a natural clearing, seasonal creek. Taxes $594.53 (2025). Township name not stated in listing. Hearst is far north (~3 h from Timmins, estimate).",
+   "url": "https://property.ca/listings/t13053332",
+   "status": "Active (new - exact size match)",
+   "first_seen": "2026-10-25",
+   "last_checked": "2026-10-25"
+  },
+  {
+   "name": "PCL 11104 Pt Lt 12 Con 6 Murphy Twp - 160 acres",
+   "area": "Murphy Twp, ~18 km NW of downtown Timmins (City of Timmins) - organized",
+   "acres": 160,
+   "price": "$89,000 (MLS list price)",
+   "sale_type": "MLS listing (not tax sale)",
+   "deadline": "None (open listing)",
+   "frontage": "Unconfirmed (cross street Hwy 655; 'fronting on East' per listing, no road described)",
+   "zoning": "Rural (City of Timmins)",
+   "notes": "MLS T14109418 (HomeLife Optimum), listing updated Oct 22 2026. Surface, mineral and tree rights (except pine). Borders Crown land to the west; Kidd Creek along west edge; 5 lakes within 2.5 km. Taxes $297.09 (2026). ORGANIZED (inside Timmins), so it misses the unorganized criterion, but it's in the ideal Timmins area and Rural zoning may allow a house.",
+   "url": "https://buyrealty.ca/listing-view/?property=pcl-11104-pt-lt-12-con-6-murphy-township-timmins-on-p4n-2c7-timmins-mls-T14109418",
+   "status": "Active (new - Timmins area, organized)",
+   "first_seen": "2026-10-25",
+   "last_checked": "2026-10-25"
   }
  ],
  "sources": [
@@ -124,6 +169,10 @@
   {
    "date": "2026-10-18",
    "entry": "Weekly check. Timmins first: the city's spring tax sale was cancelled (all 3 properties redeemed) and no new Timmins tax sale is posted; council vested several failed tax-sale vacant parcels (incl. Ogden, Godfrey and Whitney Twp land) to sell later by tender or direct sale, worth watching. McGarry 180 ac: Oct 1 tax sale failed with no bids ($173,711 minimum, gravel-pit MX zoning, private road) - not a fit. Larder Lake 101 ac still listed at $120K, unchanged. South Porcupine 243 ac still unconfirmed. New unorganized-township listings added: Coulson Twp 160 ac $120K (logging-road access, seller financing possible), Pyne Twp 134.5 ac $129,900 (3-season road, Abitibi River frontage), Fournier Twp 65.58 ac $139,900 (Hwy 11 frontage). No northern Infrastructure Ontario land sales or new Gazette tax sales from Sudbury north with large acreage found; Moosonee tax sale postponed."
+  },
+  {
+   "date": "2026-10-25",
+   "entry": "Weekly check. Changes: Fournier Twp 65.58 ac price cut from $139,900 to $119,400 (Oct 22). Added 3 new parcels: Holmes Twp 169 ac $89,000 (unorganized, east of Matachewan, MLS T13857208, access unconfirmed); Lot 26 Con 7 near Hearst 150 ac $100,000 (unorganized, seasonal road, MLS T13053332); Murphy Twp 160 ac $89,000 (organized, City of Timmins, MLS T14109418). Unchanged: Larder Lake $120K, Coulson $120K, Pyne $129,900 all still listed. McGarry: no relist found. South Porcupine 243 ac still unverified. Noted but not added: Hanlan Twp near Hearst 73.1 ac $80,000 (under 80 ac). Tax sales: no large-acreage tax sales from Sudbury north found; Greater Sudbury Nov 3 tender includes Keast Dr (~51 ac, urban Sudbury, min $67,158.12) - not a fit. Timmins: no new tax sale or city land sale posted; vested Ogden/Godfrey/Whitney parcels not yet offered. Infrastructure Ontario surplus list shows no large northern acreage."
   }
  ]
 }
