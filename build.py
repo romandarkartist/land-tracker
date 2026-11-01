@@ -1,15 +1,20 @@
-import json,html,os
+import json,html,os,re
 B=os.path.dirname(__file__) or '.'
 d=json.load(open(os.path.join(B,'data.json')))
 e=lambda s:html.escape(str(s if s is not None else ''))
 F=[('area','Area'),('price','Price / min bid'),('sale_type','Sale type'),('deadline','Deadline'),('frontage','Frontage'),('zoning','Zoning'),('first_seen','First seen'),('last_checked','Last checked')]
+def ppa(p):
+    ac=p.get('acres');m=re.search(r'\$\s*([\d,]+(?:\.\d+)?)\s*([kKmM])?\b',str(p.get('price') or ''))
+    if not ac or not m:return None
+    v=float(m.group(1).replace(',',''));u=(m.group(2) or '').lower();v*=1000 if u=='k' else 1e6 if u=='m' else 1
+    return round(v/float(ac)) if v>0 else None
 def card(p):
     dl=''.join(f"<dt>{l}</dt><dd>{e(p.get(k))}</dd>" for k,l in F)
-    ac=p.get('acres')
+    ac=p.get('acres');pp=ppa(p);pps=f'${pp:,}/acre' if pp is not None else 'n/a'
     link=f"<a class=btn href=\"{e(p['url'])}\" target=_blank rel=noopener>View listing</a>" if p.get('url') else "<span class='btn off'>Source unconfirmed</span>"
-    return (f"<article class='card p' data-acres='{ac or 0}' data-name=\"{e(p['name'])}\" data-seen=\"{e(p.get('first_seen'))}\" data-checked=\"{e(p.get('last_checked'))}\">"
+    return (f"<article class='card p' data-acres='{ac or 0}' data-ppa='{pp if pp is not None else ""}' data-name=\"{e(p['name'])}\" data-seen=\"{e(p.get('first_seen'))}\" data-checked=\"{e(p.get('last_checked'))}\">"
       f"<div class=ph><h3>{e(p['name'])}</h3><span class=ac>{e(ac) if ac else '?'} ac</span></div>"
-      f"<div class=st>{e(p.get('status'))}</div><dl>{dl}</dl><p class=n>{e(p.get('notes'))}</p>{link}</article>")
+      f"<div class=pp>Price per acre: <b>{pps}</b></div><div class=st>{e(p.get('status'))}</div><dl>{dl}</dl><p class=n>{e(p.get('notes'))}</p>{link}</article>")
 cards=''.join(card(p) for p in d['parcels'])
 src=''.join(f"<li><a href='{e(s['url'])}' target=_blank rel=noopener>{e(s['name'])}</a></li>" for s in d['sources'])
 log=''.join(f"<li><b>{e(l['date'])}</b> {e(l['entry'])}</li>" for l in sorted(d['log'],key=lambda x:x['date'],reverse=True))
@@ -35,17 +40,18 @@ input{flex:1 1 220px;min-width:0}select{flex:0 0 auto}
 dl{display:grid;grid-template-columns:minmax(90px,35%) 1fr;gap:4px 10px;margin:8px 0}dt{color:var(--mut);font-size:.9rem}dd{margin:0}
 .n{color:var(--mut);font-size:.95rem;margin:8px 0}
 .btn{display:flex;align-items:center;justify-content:center;min-height:44px;border-radius:10px;background:var(--acc);color:var(--accfg);text-decoration:none;font-weight:600}
+.pp{margin:8px 0 0;font-size:1rem;font-weight:700;color:var(--fg);border-left:4px solid var(--acc);padding-left:8px}
 .btn.off{background:var(--chip);color:var(--mut)}
 ul{padding-left:20px;margin:6px 0}li{margin:8px 0}li a{display:inline-block;min-height:44px;padding:10px 0}
 """
 out=f"""<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name=color-scheme content="light dark"><meta name=theme-color content="#2f5233"><meta name=apple-mobile-web-app-capable content=yes><title>{e(d['title'])}</title><style>{css}</style></head><body>
 <header><h1>{e(d['title'])}</h1><small>Last updated {e(d['last_updated'])}</small></header><main>
 <section class=card><h2>Summary</h2><p>{e(d['criteria'])}</p><p>{len(d['parcels'])} parcels tracked, {tot} acres total.</p></section>
-<div class=ctl><input id=q type=search placeholder="Filter parcels…" aria-label="Filter parcels"><select id=s aria-label="Sort"><option value="">Default order</option><option value="acres">Acres (most)</option><option value="name">Name</option><option value="seen">First seen (newest)</option><option value="checked">Last checked (newest)</option></select></div>
+<div class=ctl><input id=q type=search placeholder="Filter parcels…" aria-label="Filter parcels"><select id=s aria-label="Sort"><option value="">Default order</option><option value="acres">Acres (most)</option><option value="ppa">Price per acre (lowest)</option><option value="name">Name</option><option value="seen">First seen (newest)</option><option value="checked">Last checked (newest)</option></select></div>
 <div class=grid id=g>{cards}</div>
 <section class=card><h2>Sources</h2><ul>{src}</ul></section><section class=card><h2>Research log</h2><ul>{log}</ul></section></main>
 <script>const g=document.getElementById('g'),q=document.getElementById('q'),s=document.getElementById('s'),orig=[...g.children];
 q.oninput=()=>{{const v=q.value.toLowerCase();for(const c of g.children)c.style.display=c.innerText.toLowerCase().includes(v)?'':'none'}};
-s.onchange=()=>{{const k=s.value;let a=[...orig];if(k==='acres')a.sort((x,y)=>y.dataset.acres-x.dataset.acres);else if(k==='name')a.sort((x,y)=>x.dataset.name.localeCompare(y.dataset.name));else if(k)a.sort((x,y)=>(y.dataset[k]||'').localeCompare(x.dataset[k]||''));a.forEach(c=>g.appendChild(c))}};</script></body></html>"""
+s.onchange=()=>{{const k=s.value;let a=[...orig];if(k==='ppa')a.sort((x,y)=>{{const p=x.dataset.ppa===''?Infinity:+x.dataset.ppa,r=y.dataset.ppa===''?Infinity:+y.dataset.ppa;return p===r?0:p<r?-1:1}});else if(k==='acres')a.sort((x,y)=>y.dataset.acres-x.dataset.acres);else if(k==='name')a.sort((x,y)=>x.dataset.name.localeCompare(y.dataset.name));else if(k)a.sort((x,y)=>(y.dataset[k]||'').localeCompare(x.dataset[k]||''));a.forEach(c=>g.appendChild(c))}};</script></body></html>"""
 open(os.path.join(B,'index.html'),'w').write(out)
 print('built',len(d['parcels']))
