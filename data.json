@@ -1,6 +1,6 @@
 {
  "title": "Northern Ontario Land & Tax Sale Tracker",
- "last_updated": "2026-11-01",
+ "last_updated": "2026-11-14",
  "criteria": "Unorganized land from Sudbury north (Timmins area ideal; farther north fine; nothing south of Sudbury). Goal ~150 acres with road frontage, ideally from a tax sale. Research only for now.",
  "parcels": [
   {
@@ -16,7 +16,8 @@
    "url": "https://property.ca/listings/t13654964",
    "status": "Active (watching)",
    "first_seen": "2026-10",
-   "last_checked": "2026-11-01"
+   "last_checked": "2026-11-01",
+   "last_confirmed": "2026-11-08"
   },
   {
    "name": "McGarry 180.38 acres (Roll 54 58 000 004 36800)",
@@ -31,7 +32,8 @@
    "url": "https://www.ontariotaxsales.ca/property/mcgarry-2026-10-01-24-25/",
    "status": "Tax sale failed (no bids) - not a fit",
    "first_seen": "2026-10",
-   "last_checked": "2026-11-01"
+   "last_checked": "2026-11-01",
+   "last_confirmed": null
   },
   {
    "name": "South Porcupine near Hwy 101 - 243.43 acres (Infrastructure Ontario #600)",
@@ -46,7 +48,8 @@
    "url": "https://propertiesforsale.infrastructureontario.ca/",
    "status": "Verified - not available (IO direct-sale negotiation)",
    "first_seen": "2026-10",
-   "last_checked": "2026-11-01"
+   "last_checked": "2026-11-01",
+   "last_confirmed": "2026-11-01"
   },
   {
    "name": "PCL 1175 Coulson Township - 160 acres",
@@ -61,7 +64,8 @@
    "url": "https://buyrealty.ca/listing-view/?property=pcl-1175-coulson-township-cochrane-on-p0k-1n0-cochrane-mls-T13427242",
    "status": "Active (worth a look)",
    "first_seen": "2026-10-18",
-   "last_checked": "2026-11-01"
+   "last_checked": "2026-11-01",
+   "last_confirmed": "2026-11-01"
   },
   {
    "name": "Lot 12 PCL 1859 Pyne Twp - 134.5 acres",
@@ -76,7 +80,8 @@
    "url": "https://www.squareyards.ca/sale/on/cochrane/cochrane-unorganized/lot-12-pcl-1859-pyne-twp-n-a",
    "status": "Active (worth a look)",
    "first_seen": "2026-10-18",
-   "last_checked": "2026-11-01"
+   "last_checked": "2026-11-01",
+   "last_confirmed": "2026-11-01"
   },
   {
    "name": "PT LT 11 Con 6 Fournier Twp - Hwy 11, 65.58 acres",
@@ -91,7 +96,8 @@
    "url": "https://buyrealty.ca/listing-view/?property=pt-lt-11-con-6-fournier-trans-canada-highway-11-highway-cochrane-cochrane-unorganized-mls-T13200124",
    "status": "Active - PRICE CUT",
    "first_seen": "2026-10-18",
-   "last_checked": "2026-11-01"
+   "last_checked": "2026-11-01",
+   "last_confirmed": "2026-11-01"
   },
   {
    "name": "PCL 399 Holmes Twp - 169 acres",
@@ -106,7 +112,8 @@
    "url": "https://www.squareyards.ca/sale/on/timiskaming/kirkland-lake/kl-outside/pcl-399-holmes-unorganized-n-a",
    "status": "Active (new - strong fit, access unconfirmed)",
    "first_seen": "2026-10-25",
-   "last_checked": "2026-11-01"
+   "last_checked": "2026-11-01",
+   "last_confirmed": "2026-11-01"
   },
   {
    "name": "Lot 26 Con 7 near Hearst - 150 acres",
@@ -121,7 +128,8 @@
    "url": "https://property.ca/listings/t13053332",
    "status": "Active (new - exact size match)",
    "first_seen": "2026-10-25",
-   "last_checked": "2026-11-01"
+   "last_checked": "2026-11-01",
+   "last_confirmed": "2026-11-08"
   },
   {
    "name": "PCL 11104 Pt Lt 12 Con 6 Murphy Twp - 160 acres",
@@ -136,7 +144,8 @@
    "url": "https://buyrealty.ca/listing-view/?property=pcl-11104-pt-lt-12-con-6-murphy-township-timmins-on-p4n-2c7-timmins-mls-T14109418",
    "status": "Active (new - Timmins area, organized)",
    "first_seen": "2026-10-25",
-   "last_checked": "2026-11-01"
+   "last_checked": "2026-11-01",
+   "last_confirmed": "2026-11-01"
   },
   {
    "name": "Lot 3 Con 5 Little Twp - 159 acres",
@@ -151,7 +160,8 @@
    "url": "https://www.realtor.ca/real-estate/29680912/lot-3-con-5-cochrane-cochrane-unorganized",
    "status": "Active (new - Timmins area, logging-road access)",
    "first_seen": "2026-11-01",
-   "last_checked": "2026-11-01"
+   "last_checked": "2026-11-01",
+   "last_confirmed": "2026-11-01"
   },
   {
    "name": "Lot 11 Con 2 - 160 acres (Unorganized West Timiskaming)",
@@ -166,7 +176,8 @@
    "url": "https://www.realtor.ca/real-estate/29564793/lot-11-con-2-timiskaming-tim-outside-rural",
    "status": "Active (new - no road access)",
    "first_seen": "2026-11-01",
-   "last_checked": "2026-11-01"
+   "last_checked": "2026-11-01",
+   "last_confirmed": "2026-11-01"
   },
   {
    "name": "1/2 Lt 9 Con 1 McCann - 160 acres (Watabeag area)",
@@ -181,7 +192,8 @@
    "url": "https://www.realty.ca/land-listings/154668914/1-2-Lt-9-Con-1-Mccann-Cochrane-Remote-Area-ON-P0k1n0",
    "status": "Watching - listing status unconfirmed",
    "first_seen": "2026-11-01",
-   "last_checked": "2026-11-01"
+   "last_checked": "2026-11-01",
+   "last_confirmed": null
   }
  ],
  "sources": [
@@ -226,6 +238,10 @@
   {
    "date": "2026-11-01",
    "entry": "Weekly check. South Porcupine 243 ac VERIFIED: Infrastructure Ontario surplus parcel #600 (243.43 ac near Hwy 101, Timmins), status 'In Negotiations for Direct Sale' since 2022, so not available to the public. Added 3 new unorganized parcels: Little Twp 159 ac $79,000 (MLS T13250402, ~35 km NE of Timmins, logging-road access); Lot 11 Con 2 Unorganized West Timiskaming 160 ac $175,000 (MLS T12964312, ATV/logging access); McCann/Watabeag 160 ac $127,000 (MLS T9398020, listing status unconfirmed). All 8 other parcels unchanged in price and still listed; Larder Lake is an IO surplus listing (IO #641). McGarry still not relisted. Tax sales: no large-acreage tax sales from Sudbury north; Greater Sudbury cancelled the Keast Dr (~51 ac) tender for Nov 3. Timmins: no tax sale or city land sale posted; per the Mar 2026 vesting report the Ogden Twp parcel is for direct sale to abutting owners and Godfrey/Whitney Twp parcels are retained by the city, so none will be offered publicly. Noted only: Prince Twp (Algoma, near Sault Ste. Marie) 320 ac $499,900 with wind leases - over budget and at/below Sudbury's latitude."
+  },
+  {
+   "date": "2026-11-14",
+   "entry": "Added a per-parcel last_confirmed date (last time a listing page actually loaded and showed the parcel still listed, or IO status was verified). Dates taken only from existing check notes: Larder Lake and Hearst 150 ac 2026-11-08 (pages re-confirmed); eight parcels 2026-11-01 (Nov 1 check found them still listed, or they were added from a loaded listing that day); South Porcupine 2026-11-01 (IO status verified as in direct-sale negotiation). McGarry and McCann/Watabeag left unconfirmed (failed tax sale never relisted; listing never confirmed on REALTOR.ca). Nov 8 did not bump the other parcels because those listing pages were blocked."
   }
  ]
 }
